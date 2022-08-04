@@ -11,7 +11,7 @@ For learning purposes. This repo will contain my notes and code.
 
 ## Other
 ### Early Exercise & Arbitrage Boundaries
-### Put-Call Parity
+### [Put-Call Parity](parity/README.md)
 ### Volatility Skew
 
 ## API for Securities Data
