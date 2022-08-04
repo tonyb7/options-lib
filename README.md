@@ -6,7 +6,7 @@ For learning purposes. This repo will contain my notes and code.
 
 ## Pricing
 ### Binomial Options Pricing
-### Black-Scholes Model
+### [Black-Scholes Model](black_scholes/README.md)
 ### Greeks
 
 ## Other
@@ -15,8 +15,5 @@ For learning purposes. This repo will contain my notes and code.
 ### Volatility Skew
 
 ## API for Securities Data
-
-## Sources
-*Option Volatility and Pricing* by Sheldon Natenberg
 
 
