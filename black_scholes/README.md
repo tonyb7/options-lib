@@ -1,5 +1,7 @@
 Black Scholes 
 ====
+This document is meant to provide a high-level, intuitive overview of Black-Scholes. For a more detailed derivation of the Black-Scholes equation, see [derivation.ipynb](derivation.ipynb).
+
 ## The Equation
 We begin with the Black-Scholes equation, which is a differential equation describing how the value of an option changes as the underlying price and time changes. The solution to the Black-Scholes equation yields the Black-Scholes model, which is used to calculate the exact value of an option. 
 
