@@ -36,6 +36,11 @@ Reminding ourselves that $\Delta=\frac{\partial C}{\partial S}$ and $\Gamma=\fra
 
 The primary differences between the equations are the interest-rate component attached to $S$ and the volatility component attached to gamma. The Black-Scholes equation also assumes an instantaneous price change instead of a discrete price change. 
 
+### Derivation
+A more detailed derivation can be found in [derivation.ipynb](derivation.ipynb).
+
 ## Sources
 - *Option Volatility and Pricing, Chapter 18: The Black-Scholes Model* by Sheldon Natenberg
 - [Wikipedia: Black-Scholes Equation](https://en.wikipedia.org/wiki/Black%E2%80%93Scholes_equation)
+- [FN452 Deriving the Black-Scholes-Merton Equation](https://www.youtube.com/watch?v=IynFtIQ6HaI), Nattakit Chokwattananuwat
+
