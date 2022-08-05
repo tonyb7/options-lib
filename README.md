@@ -7,6 +7,7 @@ For learning purposes. This repo will contain my notes and code.
 ## Pricing
 ### Binomial Options Pricing
 ### [Black-Scholes Model](black_scholes/README.md)
+- [Black-Scholes-Merton equation derivation](black_scholes/derivation.ipynb)
 ### Greeks
 
 ## Other
