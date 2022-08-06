@@ -41,8 +41,40 @@ The primary differences between the equations are the interest-rate component at
 ### Derivation
 A more detailed derivation can be found in [derivation.ipynb](derivation.ipynb).
 
+## The Model
+The Black-Scholes equation has many solutions, corresponding to all the different derivatives that can be defined with $S$ as the underlying variable. The particular derivative that is obtained when the equation is solved depends on the boundary conditions used. The boundary conditions specify the value of the derivative at the boundaries of possible values of $S$ and $t$. 
+
+For a European call option $C(S_t, t)$ (where the parameters are $S_t$ the price of the underlying and $t$ is time-to-expiry), the boundary conditions are:
+
+1. $C(0, t) = 0 \text{ for all } t$
+2. $C(S, t) \rightarrow S - K \text{ as } S\rightarrow\infty$
+3. $C(S, 0) = \max\{S - K, 0\}$. This is the value of the option at expiry.
+
+Using these boundary conditions, the Black-Scholes equation can be solved to yield the Black-Scholes formula for the value of a call option:
+
+$$
+\begin{aligned}
+C(S_t, t) &= \mathcal{N}(d_1)S_t - \mathcal{N}(d_2)Ke^{-rt}\\
+d_1 &= \frac{\ln{\frac{S_t}{K}} + (r + \frac{\sigma^2}{2})t}{\sigma\sqrt{t}}\\
+d_2 &= d_1 - \sigma\sqrt{t}
+\end{aligned}
+$$
+
+where 
+
+- $C$ is the theoretical value of a European call
+- $t$ is time-to-expiry in years
+- $S_t$ is the price of a non-dividend-paying stock with $t$ years until expiry
+- $X$ is the strike of the option
+- $\sigma$ is the annualized standard deviation (volatility) of the stock price in percent
+- $r$ is the annual interest rate, and 
+- $\mathcal{N}$ is the cumulative standard normal distribution function.
+
+
 ## Sources
 - *Option Volatility and Pricing, Chapter 18: The Black-Scholes Model* by Sheldon Natenberg
 - [Wikipedia: Black-Scholes Equation](https://en.wikipedia.org/wiki/Black%E2%80%93Scholes_equation)
 - [FN452 Deriving the Black-Scholes-Merton Equation](https://www.youtube.com/watch?v=IynFtIQ6HaI), Nattakit Chokwattananuwat
+- *Options, Futures, and Other Derivatives* by John Hull
+- [Wikipedia: Black-Scholes model](https://en.wikipedia.org/wiki/Black%E2%80%93Scholes_model)
 
