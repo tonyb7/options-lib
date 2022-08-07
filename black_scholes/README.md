@@ -41,7 +41,7 @@ The primary differences between the equations are the interest-rate component at
 ### Derivation
 A more detailed derivation can be found in [derivation.ipynb](derivation.ipynb).
 
-## The Model
+## The Formula
 The Black-Scholes equation has many solutions, corresponding to all the different derivatives that can be defined with $S$ as the underlying variable. The particular derivative that is obtained when the equation is solved depends on the boundary conditions used. The boundary conditions specify the value of the derivative at the boundaries of possible values of $S$ and $t$. 
 
 For a European call option $C(S_t, t)$ (where the parameters are $S_t$ the price of the underlying and $t$ is time-to-expiry), the boundary conditions are:
