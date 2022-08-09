@@ -70,6 +70,16 @@ where
 - $r$ is the annual interest rate, and 
 - $\mathcal{N}$ is the cumulative standard normal distribution function.
 
+For a put, we can solve for the formula using different boundary conditions (e.g. $P(S, 0) = \max\{K - S, 0\}$ for the value of the option at expiry), or we can use put-call parity with a discount factor of $e^{-rt}$ to get that 
+
+$$
+\begin{aligned}
+P(S_t, t) &= Ke^{-rt} - S_t + C(S_t, t) \\
+    &= Ke^{-rt} - S_t + (\mathcal{N}(d_1)S_t - \mathcal{N}(d_2)Ke^{-rt})\\
+    &= (\mathcal{N}(d_1) - 1)S_t + (1 - \mathcal{N}(d_2))Ke^{-rt}\\
+    &= -\mathcal{N}(-d_1)S_t + N(-d_2)Ke^{-rt}
+\end{aligned}
+$$
 
 ## Sources
 - *Option Volatility and Pricing, Chapter 18: The Black-Scholes Model* by Sheldon Natenberg
