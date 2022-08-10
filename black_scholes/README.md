@@ -65,8 +65,8 @@ where
 - $C$ is the theoretical value of a European call
 - $t$ is time-to-expiry in years
 - $S_t$ is the price of a non-dividend-paying stock with $t$ years until expiry
-- $X$ is the strike of the option
-- $\sigma$ is the annualized standard deviation (volatility) of the stock price in percent
+- $K$ is the strike of the option
+- $\sigma$ is the annualized standard deviation (volatility) of the stock price in percent, expressed as a decimal
 - $r$ is the annual interest rate, and 
 - $\mathcal{N}$ is the cumulative standard normal distribution function.
 
@@ -77,7 +77,7 @@ $$
 P(S_t, t) &= Ke^{-rt} - S_t + C(S_t, t) \\
     &= Ke^{-rt} - S_t + (\mathcal{N}(d_1)S_t - \mathcal{N}(d_2)Ke^{-rt})\\
     &= (\mathcal{N}(d_1) - 1)S_t + (1 - \mathcal{N}(d_2))Ke^{-rt}\\
-    &= -\mathcal{N}(-d_1)S_t + N(-d_2)Ke^{-rt}
+    &= -\mathcal{N}(-d_1)S_t + \mathcal{N}(-d_2)Ke^{-rt}
 \end{aligned}
 $$
 
