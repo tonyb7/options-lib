@@ -8,6 +8,7 @@ Put-Call Parity
 Put-Call Parity
 - C - P = S - K + r/c
 - S - K = parity
+- S = (C - P) + K - r/c = parity + K - r/c = combo + K - r/c 
 
 Reversal conversion (r/c)
 - cost of carry
